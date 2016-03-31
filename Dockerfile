@@ -1,4 +1,4 @@
-FROM FROM daocloud.io/ubuntu:trusty
+FROM daocloud.io/ubuntu:trusty
 
 MAINTAINER gerry 20150126
 
