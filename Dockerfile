@@ -1,7 +1,5 @@
 FROM daocloud.io/ubuntu:trusty
 
-MAINTAINER gerry 20150126
-
 RUN apt-get install -y nginx && rm -rf /var/lib/apt/lists/* && echo "\ndaemon off;" >> /etc/nginx/nginx.conf && chown -R www-data:www-data /var/lib/nginx
 RUN echo "Asia/Shanghai" > /etc/timezone && dpkg-reconfigure -f noninteractive tzdata
 
@@ -16,4 +14,3 @@ CMD ["/run.sh"]
 
 EXPOSE 80
 EXPOSE 443
-
